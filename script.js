@@ -56,8 +56,6 @@ const projectData = {
     }
 };
 
-console.log('Project data loaded:', projectData);
-
 // Modal functionality
 const modal = document.getElementById('projectModal');
 const videoModal = document.getElementById('videoModal');
@@ -280,20 +278,6 @@ modal.addEventListener('touchmove', (e) => {
     }
 });
 
-// Add hover effect audio feedback (optional - commented out by default)
-// Uncomment to enable subtle UI sound effects
-/*
-const hoverSound = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBjGH0fPTgjMGHm7A7+OZURE=');
-hoverSound.volume = 0.1;
-
-projectCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        // hoverSound.currentTime = 0;
-        // hoverSound.play().catch(() => {});
-    });
-});
-*/
-
 // Navbar functionality
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -324,10 +308,9 @@ window.addEventListener('scroll', () => {
 });
 
 // EmailJS initialization
-// Replace these with your actual EmailJS credentials after signing up at https://www.emailjs.com/
-const EMAILJS_PUBLIC_KEY = '4-OUV3n4Z6mgZIkRQ'; // Get from EmailJS dashboard
-const EMAILJS_SERVICE_ID = 'service_14hq5fh'; // Get from EmailJS dashboard
-const EMAILJS_TEMPLATE_ID = 'template_nkdm1da'; // Get from EmailJS dashboard
+const EMAILJS_PUBLIC_KEY = '4-OUV3n4Z6mgZIkRQ';
+const EMAILJS_SERVICE_ID = 'service_14hq5fh';
+const EMAILJS_TEMPLATE_ID = 'template_nkdm1da';
 
 // Initialize EmailJS
 if (typeof emailjs !== 'undefined') {
@@ -345,15 +328,6 @@ if (contactForm) {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Check if EmailJS is configured
-        if (EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
-            alert('EmailJS is not configured yet. Please add your EmailJS credentials in script.js');
-            submitBtn.textContent = originalBtnText;
-            submitBtn.disabled = false;
-            return;
-        }
-        
-        // Send email using EmailJS
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm)
             .then(() => {
                 alert('Message sent successfully! I\'ll get back to you soon.');
@@ -369,5 +343,3 @@ if (contactForm) {
             });
     });
 }
-
-console.log('Portfolio website loaded successfully! 🚀');
