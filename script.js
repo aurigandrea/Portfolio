@@ -323,6 +323,12 @@ if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
+        // Honeypot spam protection - if this field is filled, it's a bot
+        const honeypot = document.getElementById('website').value;
+        if (honeypot) {
+            return false;
+        }
+        
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalBtnText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
