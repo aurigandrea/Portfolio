@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Andrea Kocsis - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">AK</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-profile">
+                <div class="profile-image-wrapper">
+                    <img src="img/Kocsis.jpeg" alt="Dr Andrea Kocsis" class="profile-image">
+                </div>
+                <div class="profile-text">
+                    <h1 class="hero-title">Dr Andrea Kocsis</h1>
+                    <p class="hero-subtitle">I'm a web developer helping academics and research teams tell their stories online through intuitive, playful, accessible web apps and websites.</p>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Portfolio Gallery Section -->
+    <main class="portfolio-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="gallery">
+                <!-- Project 1 -->
+                <article class="project-card" data-project="1">
+                    <div class="project-image">
+                        <video src="img/Project1/Project1.mov" muted loop playsinline autoplay class="project-video-preview"></video>
+                        <div class="project-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Website for Research</h3>
+                        <p class="project-description">Simple but creative research display</p>
+                        <div class="project-tags">
+                            <span class="tag">Infographics</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-project="2">
+                    <div class="project-image">
+                        <video src="img/Project2/Project2.mov" muted loop playsinline autoplay class="project-video-preview"></video>
+                        <div class="project-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Creative Storytelling</h3>
+                        <p class="project-description">Interactive app to explore multiple research projects</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Storytelling</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-project="3">
+                    <div class="project-image">
+                        <video src="img/Project3/Project3.mov" muted loop playsinline autoplay class="project-video-preview"></video>
+                        <div class="project-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Research Game</h3>
+                        <p class="project-description">Gamified research output</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Data Storytelling</span>
+                            <span class="tag">Gamification</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-project="4">
+                    <div class="project-image">
+                        <video src="img/Project4/Project4.mov" muted loop playsinline autoplay class="project-video-preview"></video>
+                        <div class="project-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Custom CMS Full Stack</h3>
+                        <p class="project-description">Research blog from scratch</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Full Stack</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-project="5">
+                    <div class="project-image">
+                        <video src="img/Project5/Project 5.mov" muted loop playsinline autoplay class="project-video-preview"></video>
+                        <div class="project-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Walking App</h3>
+                        <p class="project-description">Walking app from archival research</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Data-driven</span>
+                            <span class="tag">Mapping</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="6">
+                    <div class="project-video-container">
+                        <video src="img/Project6/Project6.mov" muted loop playsinline autoplay class="project-video-preview"></video>
+                        <div class="project-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Exhibition Kiosk</h3>
+                        <p class="project-description">Kiosk for audience engagement</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Web Archiving</span>
+                            <span class="tag">Interactive</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Project Details -->
+    <div class="modal" id="projectModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="Project Preview" id="modalImage">
+                    <video src="" controls id="modalVideo" style="display: none;"></video>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-details">
+                        <h3>Project Details</h3>
+                        <p id="modalFullDescription"></p>
+                        <div class="modal-tags" id="modalTags"></div>
+                        <div class="modal-links">
+                            <a href="#" class="btn-primary">Live Demo</a>
+                            <a href="#" class="btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content video-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="video-container">
+                <video src="" controls autoplay id="demoVideo"></video>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hi! I'm Dr Andrea Kocsis, academic and web developer with a passion for making research accessible and engaging through technology.
+                    </p>
+                    <p>
+                        I specialize in creating intuitive, playful, and accessible web applications that help academics and research teams share their work with the world. My approach combines modern web development practices with a deep understanding of academic needs.
+                    </p>
+                    <p>
+                    I work closely with researchers to tell the story of their data—whether from the humanities, social sciences, or STEM. From interactive exhibition kiosks to responsive web apps, I'm experienced in tailoring solutions that bring research to engagement.
+                    </p>
+                    <p>
+                        Whether it's building interactive data visualizations, creating engaging research websites, or developing tools for academic collaboration, I'm dedicated to crafting digital experiences that make complex information accessible to everyone.
+                    </p>
+                    <div class="about-skills">
+                        <h3>What I Offer</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-icon">🎨</span>
+                                <h4>Web Design</h4>
+                                <p>User-friendly interfaces with accessibility in mind</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">💻</span>
+                                <h4>Web Development</h4>
+                                <p>Modern, responsive websites and applications</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">📖</span>
+                                <h4>Storytelling</h4>
+                                <p>Interactive tools to explore research data</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🎓</span>
+                                <h4>Academic Focus</h4>
+                                <p>Understanding research workflows and needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">Interested in working together? Drop me a message!</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Andrea Kocsis. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/aurigandrea" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/andrea-kocsis-2b3a152b/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
