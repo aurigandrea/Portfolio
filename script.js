@@ -12,7 +12,7 @@ const projectData = {
     2: {
         title: "Creative Storytelling",
         description: "Interactive app to explore multiple research projects",
-        fullDescription: "This website is a Virtual Town. On a map thematic building icons spawn randomly which function as links to thematic projects. The projects are Digital Storytelling outputs of the Research Communications class designed and taught by Dr Andrea Kocsis at Anglia Ruskin University in 2024. Look around the Town: https://aruhippstown.netlify.app/",
+        fullDescription: "This website is a Virtual Town. On a map thematic building icons spawn randomly which function as links to thematic projects. The projects are Digital Storytelling outputs of the Research Communications class designed and taught by Dr Andrea Kocsis at Anglia Ruskin University in 2024. <a href='https://aruhippstown.netlify.app/' target='_blank' style='color: var(--primary-color); text-decoration: underline;'>Look around the Town</a>",
         tags: ["JavaScript", "CSS", "Storytelling"],
         image: "img/Project2/Project 2.png",
         demoVideo: "img/Project2/Project2.mov",
@@ -21,7 +21,7 @@ const projectData = {
     3: {
         title: "Research Game",
         description: "Gamified research output",
-        fullDescription: "Feeding the Future is a small educational card game that compares food items by sustainability and nutrition metrics. Developed for the TRAnsforming the DEbate about Livestock Systems Transformation (TRADE) project. Fancy a round of cards? https://aurigandrea.github.io/FeedingTheFuture/",
+        fullDescription: "Feeding the Future is a small educational card game that compares food items by sustainability and nutrition metrics. Developed for the TRAnsforming the DEbate about Livestock Systems Transformation (TRADE) project. <a href='https://aurigandrea.github.io/FeedingTheFuture/' target='_blank' style='color: var(--primary-color); text-decoration: underline;'>Fancy a round of cards?</a>",
         tags: ["JavaScript", "Data Storytelling", "Gamification"],
         image: "img/Project3/Project3.png",
         demoVideo: "img/Project3/Project3.mov",
@@ -30,7 +30,7 @@ const projectData = {
     4: {
         title: "Custom CMS Full Stack",
         description: "Research blog from scratch",
-        fullDescription: "A secure, multi-login research blog, with a Content Management System from scratch and custom social media sharing functions. Looks good on both mobile and desktop. Read around: https://heritagedigital.org/",
+        fullDescription: "A secure, multi-login research blog, with a Content Management System from scratch and custom social media sharing functions. Looks good on both mobile and desktop. <a href='https://heritagedigital.org/' target='_blank' style='color: var(--primary-color); text-decoration: underline;'>Read around</a>",
         tags: ["Node.js", "Full Stack", "Python"],
         image: "img/Project4/Project4.png",
         demoVideo: "img/Project4/Project4.mov",
@@ -79,7 +79,7 @@ function openModal(projectId) {
     
     document.getElementById('modalTitle').textContent = project.title;
     document.getElementById('modalDescription').textContent = project.description;
-    document.getElementById('modalFullDescription').textContent = project.fullDescription;
+    document.getElementById('modalFullDescription').innerHTML = project.fullDescription;
     
     // Clear and populate tags
     const modalTags = document.getElementById('modalTags');
