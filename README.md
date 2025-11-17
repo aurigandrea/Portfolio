@@ -27,13 +27,6 @@ Personal portfolio website for Dr Andrea Kocsis - Web Developer specializing in 
    - `EMAILJS_SERVICE_ID`
    - `EMAILJS_TEMPLATE_ID`
 
-## Structure
-
-- `index.html` - Main HTML structure
-- `styles.css` - All styling and animations
-- `script.js` - Interactive functionality
-- `img/` - Project images and videos
-
 ## License
 
 © 2025 Andrea Kocsis. MIT
