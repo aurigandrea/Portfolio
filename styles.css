@@ -402,24 +402,6 @@ body {
     margin-right: auto;
 }
 
-.gallery .project-card {
-    justify-self: center;
-}
-
-.gallery .project-card:nth-child(4) {
-    grid-column: 1 / 2;
-    grid-row: 2;
-    justify-self: end;
-    margin-right: 15px;
-}
-
-.gallery .project-card:nth-child(5) {
-    grid-column: 3 / 4;
-    grid-row: 2;
-    justify-self: start;
-    margin-left: 15px;
-}
-
 .project-card {
     background: var(--white);
     border-radius: 20px;
