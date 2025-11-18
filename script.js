@@ -49,7 +49,7 @@ const projectData = {
         title: "Exhibition Kiosk",
         description: "Kiosk for audience engagement",
         fullDescription: "During the Digital Ghosts exhibition, visitors could save their own web archive. The app archives the input on Wayback Machine and also curates a list of the submitted websites.",
-        tags: ["JavaScript", "Web Archiving", "Interactive"],
+        tags: ["JavaScript", "Web Archiving", "Exhibition"],
         image: "img/Project6/Project6.png",
         demoVideo: "img/Project6/Project6.mov",
         code: "#"
