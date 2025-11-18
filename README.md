@@ -2,7 +2,7 @@
 
 Personal portfolio website for Dr Andrea Kocsis - Web Developer specializing in academic and research projects.
 
-#If you want to fork it
+# If you want to fork it
 
 ## Features
 
